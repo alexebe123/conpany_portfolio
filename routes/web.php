@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\Service;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,8 +15,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/about', function () {
-    return view('about');
+    return view('about',['data'=>Service::all()]);
 })->name("about");      
+/*Route::get('/about', function () {
+    $data = [
+        'titel'=>'Ala'  ,
+        'decription'=> 'Abbassi'
+    ];
+    return view('about',
+     [ 'data'=>  $data]
+    );
+})->name("about");  */
+
 Route::get('/contact', function () {
     return view('contact');
 })->name("contact");
@@ -31,3 +42,6 @@ Route::get('/welcome', function () {
 Route::get('/team', function () {
     return view('team');
 })->name("team");
+Route::get('/login', function () {
+    return view('login');
+})->name("login");

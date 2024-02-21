@@ -57,7 +57,7 @@
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio omnis fugit, sed tempora praesentium commodi error, hic recusandae repudiandae neque ad molestias, atque veritatis labore quae eveniet autem in
                     </p>
                     <div class="btn-box">
-                      <a href="" class="btn1">
+                      <a href="{{route('contact')}}" class="btn1">
                         Contact Us
                       </a>
                     </div>

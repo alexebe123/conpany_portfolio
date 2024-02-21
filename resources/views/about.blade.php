@@ -52,7 +52,7 @@
           <div class="detail-box pr-md-2">
             <div class="heading_container">
               <h2 class="">
-                About Us
+                About Us {{$data[0]['titel']}}
               </h2>
             </div>
             <p class="detail_p_mt">
