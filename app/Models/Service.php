@@ -7,7 +7,7 @@ class Service {
     'titel'=>'Ala'  ,
     'decription'=> 'Abbassi'];
      return [
-       $data
+       $data 
      ];
  }
 
