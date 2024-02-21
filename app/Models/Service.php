@@ -1,14 +1,11 @@
 <?php
+
 namespace App\Models;
 
-class Service {
- static public function all(){
-    $data =   [
-    'titel'=>'Ala'  ,
-    'decription'=> 'Abbassi'];
-     return [
-       $data 
-     ];
- }
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
 
+class Service extends Model
+{
+    use HasFactory;
 }
